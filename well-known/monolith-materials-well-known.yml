@@ -1,0 +1,59 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of /.well-known/* on every host in apis.yml
+note: >-
+  Recorded absence. No /.well-known document is served by Monolith on any host. The corporate
+  site (monolith-corp.com) returns a hard 404 with a consistent 14,145-byte error body for every
+  /.well-known path probed. The carbon-black product subdomain
+  (carbonblack.monolith-corp.com) is an SPA/catch-all that answers HTTP 200 with a byte-identical
+  21,174-byte HTML shell for EVERY path, including a random control path that cannot exist — its
+  200s are soft-404s and are NOT documents. No WellKnown and no SecurityTxt pointer is emitted in
+  apis.yml, because none of these probes returned a real document.
+hit_count: 0
+hosts:
+- host: https://monolith-corp.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://carbonblack.monolith-corp.com
+  soft_404_control:
+    path: /zz-api-evangelist-control-<random>
+    status: 200
+    bytes: 21174
+    verdict: >-
+      Catch-all confirmed. A path that cannot exist returns the same 200 and the same byte count
+      as every other path on this host, so no 200 from this host can be treated as a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_404: true
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_404: true
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_404: true
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_404: true
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_404: true
+  - path: /.well-known/agent-card.json
+    status: 200
+    soft_404: true
+  - path: /.well-known/agent.json
+    status: 200
+    soft_404: true

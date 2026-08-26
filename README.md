@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Monolith Materials is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/monolith-materials_stock/
+Monolith (legally Monolith Inc., formerly Monolith Materials) is an American chemicals and
+advanced-materials manufacturer in Lincoln, Nebraska, founded in 2012. It runs methane pyrolysis at
+commercial scale — an electrified thermal-plasma process that splits natural gas or renewable biogas
+into solid carbon and clean hydrogen without direct CO2 combustion. The carbon is finished into
+carbon black for tires, rubber, plastics, batteries and electronics; the hydrogen is used on site or
+converted to anhydrous ammonia. Its Olive Creek plant in Hallam, Nebraska has supplied carbon black
+to Goodyear since 2023.
+
+**Monolith publishes no API.** It is a physical materials producer, not a software company. Probed
+2026-08-26: no OpenAPI, GraphQL, MCP, AsyncAPI or A2A agent card is served on any Monolith host, no
+developer/docs/api subdomain resolves, and the corporate site carries no developer or integration
+link. See `x-coverage` in `apis.yml` for the probe evidence.
+
+- https://monolith-corp.com/

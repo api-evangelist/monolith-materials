@@ -1,7 +1,16 @@
 aid: monolith-materials
 name: Monolith Materials
-description: 'Monolith Materials is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Monolith (legally Monolith Inc., formerly Monolith Materials) is an American
+  chemicals and advanced-materials manufacturer headquartered in Lincoln, Nebraska and founded
+  in 2012. It is the first company to run methane pyrolysis at commercial scale, using an
+  electrified thermal-plasma process to split natural gas or renewable biogas into solid carbon
+  and clean hydrogen with no direct CO2 combustion. The solid carbon is finished into carbon
+  black for tire, rubber, plastics, battery and electronics manufacturing, and the co-produced
+  hydrogen is used on-site or converted into anhydrous ammonia. Monolith operates a demonstration
+  plant in Redwood City, California and its commercial Olive Creek facility in Hallam, Nebraska,
+  which since 2023 has supplied made-in-Nebraska carbon black to Goodyear. Monolith is a physical
+  materials producer and sells industrial product, not software: it publishes no developer
+  program, no public API, and no machine-readable API contract of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/monolith-materials/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,13 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Advanced Materials
+- Chemicals
+- Manufacturing
+- Clean Hydrogen
+- Carbon Black
+- Energy Transition
+- Industrial
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,45 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/monolith-materials-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/monolith-materials_stock/
+  url: https://monolith-corp.com/
+- type: PrivacyPolicy
+  url: https://monolith-corp.com/privacy-policy
+- type: TermsOfService
+  url: https://monolith-corp.com/terms-of-use
+- type: Support
+  url: https://monolith-corp.com/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/monolith-corp/
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Monolith Inc. is a physical carbon-black and clean-hydrogen manufacturer in Lincoln, Nebraska
+    whose entire corporate site is six marketing pages (carbon-black, technology, resiliency,
+    about, contact, privacy/terms) with no developer, docs, portal or integration link anywhere in
+    the nav or footer; every OpenAPI/GraphQL/MCP/agent-card path probed on monolith-corp.com
+    returns a hard 404, no api./docs./developer./status. subdomain resolves at all, and the only
+    other host, carbonblack.monolith-corp.com, is an SPA catch-all that answers 200 with the same
+    21,174-byte shell for a random control path.
+  evidence:
+  - url: https://monolith-corp.com/openapi.json
+    status: 404
+  - url: https://monolith-corp.com/.well-known/agent-card.json
+    status: 404
+  - url: https://monolith-corp.com/developers
+    status: 404
+  - url: https://monolith-corp.com/llms.txt
+    status: 404
+  - url: https://carbonblack.monolith-corp.com/zz-api-evangelist-control
+    status: 200
+  - url: https://monolith-corp.com/
+    status: 200
+  checked: '2026-08-26'
