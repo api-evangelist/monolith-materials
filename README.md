@@ -64,17 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Monolith (legally Monolith Inc., formerly Monolith Materials) is an American chemicals and
-advanced-materials manufacturer in Lincoln, Nebraska, founded in 2012. It runs methane pyrolysis at
-commercial scale — an electrified thermal-plasma process that splits natural gas or renewable biogas
-into solid carbon and clean hydrogen without direct CO2 combustion. The carbon is finished into
-carbon black for tires, rubber, plastics, batteries and electronics; the hydrogen is used on site or
-converted to anhydrous ammonia. Its Olive Creek plant in Hallam, Nebraska has supplied carbon black
-to Goodyear since 2023.
+Monolith (legally Monolith Inc., formerly Monolith Materials) is an American chemicals and advanced-materials manufacturer headquartered in Lincoln, Nebraska and founded in 2012. It is the first company to run methane pyrolysis at commercial scale, using an electrified thermal-plasma process to split natural gas or renewable biogas into solid carbon and clean hydrogen with no direct CO2 combustion. The solid carbon is finished into carbon black for tire, rubber, plastics, battery and electronics manufacturing, and the co-produced hydrogen is used on-site or converted into anhydrous ammonia. Monolith operates a demonstration plant in Redwood City, California and its commercial Olive Creek facility in Hallam, Nebraska, which since 2023 has supplied made-in-Nebraska carbon black to Goodyear. Monolith is a physical materials producer and sells industrial product, not software: it publishes no developer program, no public API, and no machine-readable API contract of any kind.
 
-**Monolith publishes no API.** It is a physical materials producer, not a software company. Probed
-2026-08-26: no OpenAPI, GraphQL, MCP, AsyncAPI or A2A agent card is served on any Monolith host, no
-developer/docs/api subdomain resolves, and the corporate site carries no developer or integration
-link. See `x-coverage` in `apis.yml` for the probe evidence.
+**Areas:** Company · Advanced Materials · Chemicals · Manufacturing · Clean Hydrogen · Carbon Black · Energy Transition · Industrial
 
-- https://monolith-corp.com/
+## Monolith Materials on APIs.io
+
+Everything profiled for Monolith Materials is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/monolith-materials/](https://apis.io/providers/monolith-materials/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Monolith Materials Domain Security](https://apis.io/security/monolith-materials/monolith-materials-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://monolith-corp.com/)
+- [Support](https://monolith-corp.com/contact)
+- [Terms of service](https://monolith-corp.com/terms-of-use)
+- [Privacy policy](https://monolith-corp.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 9.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.9** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/monolith-materials/](https://apis.io/providers/monolith-materials/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Monolith Materials: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/monolith-materials/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
